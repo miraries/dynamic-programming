@@ -1,0 +1,1007 @@
+Reading data
+[
+  { from: 'A', to: 'B', distance: '2' },
+  { from: 'A', to: 'E', distance: '2' },
+  { from: 'A', to: 'W', distance: '1' },
+  { from: 'B', to: 'D', distance: '5' },
+  { from: 'B', to: 'W', distance: '4' },
+  { from: 'B', to: 'C', distance: '2' },
+  { from: 'B', to: 'F', distance: '3' },
+  { from: 'C', to: 'F', distance: '7' },
+  { from: 'C', to: 'V', distance: '9' },
+  { from: 'D', to: 'E', distance: '1' },
+  { from: 'D', to: 'J', distance: '7' },
+  { from: 'E', to: 'K', distance: '3' },
+  { from: 'F', to: 'L', distance: '2' },
+  { from: 'F', to: 'M', distance: '7' },
+  { from: 'F', to: 'R', distance: '3' },
+  { from: 'F', to: 'Y', distance: '1' },
+  { from: 'G', to: 'K', distance: '8' },
+  { from: 'G', to: 'J', distance: '5' },
+  { from: 'G', to: 'H', distance: '2' },
+  { from: 'H', to: 'I', distance: '4' },
+  { from: 'H', to: 'P', distance: '1' },
+  { from: 'I', to: 'K', distance: '5' },
+  { from: 'J', to: 'O', distance: '3' },
+  { from: 'J', to: 'L', distance: '2' },
+  { from: 'L', to: 'N', distance: '4' },
+  { from: 'N', to: 'O', distance: '1' },
+  { from: 'O', to: 'P', distance: '1' },
+  { from: 'M', to: 'N', distance: '5' },
+  { from: 'M', to: 'Z', distance: '3' },
+  { from: 'M', to: 'X', distance: '1' },
+  { from: 'Z', to: 'N', distance: '6' },
+  { from: 'X', to: 'Z', distance: '2' },
+  { from: 'Y', to: 'X', distance: '5' },
+  { from: 'R', to: 'S', distance: '4' },
+  { from: 'S', to: 'V', distance: '2' }
+]
+
+--------------------------------------------------
+
+{
+  vertices: [
+    'A', 'B', 'E', 'W', 'D',
+    'C', 'F', 'V', 'J', 'K',
+    'L', 'M', 'R', 'Y', 'G',
+    'H', 'I', 'P', 'O', 'N',
+    'Z', 'X', 'S'
+  ],
+  edges: [
+    { distance: 2, from: 'A', to: 'B' },
+    { distance: 2, from: 'A', to: 'E' },
+    { distance: 1, from: 'A', to: 'W' },
+    { distance: 5, from: 'B', to: 'D' },
+    { distance: 4, from: 'B', to: 'W' },
+    { distance: 2, from: 'B', to: 'C' },
+    { distance: 3, from: 'B', to: 'F' },
+    { distance: 7, from: 'C', to: 'F' },
+    { distance: 9, from: 'C', to: 'V' },
+    { distance: 1, from: 'D', to: 'E' },
+    { distance: 7, from: 'D', to: 'J' },
+    { distance: 3, from: 'E', to: 'K' },
+    { distance: 2, from: 'F', to: 'L' },
+    { distance: 7, from: 'F', to: 'M' },
+    { distance: 3, from: 'F', to: 'R' },
+    { distance: 1, from: 'F', to: 'Y' },
+    { distance: 8, from: 'G', to: 'K' },
+    { distance: 5, from: 'G', to: 'J' },
+    { distance: 2, from: 'G', to: 'H' },
+    { distance: 4, from: 'H', to: 'I' },
+    { distance: 1, from: 'H', to: 'P' },
+    { distance: 5, from: 'I', to: 'K' },
+    { distance: 3, from: 'J', to: 'O' },
+    { distance: 2, from: 'J', to: 'L' },
+    { distance: 4, from: 'L', to: 'N' },
+    { distance: 1, from: 'N', to: 'O' },
+    { distance: 1, from: 'O', to: 'P' },
+    { distance: 5, from: 'M', to: 'N' },
+    { distance: 3, from: 'M', to: 'Z' },
+    { distance: 1, from: 'M', to: 'X' },
+    { distance: 6, from: 'Z', to: 'N' },
+    { distance: 2, from: 'X', to: 'Z' },
+    { distance: 5, from: 'Y', to: 'X' },
+    { distance: 4, from: 'R', to: 'S' },
+    { distance: 2, from: 'S', to: 'V' }
+  ]
+}
+
+--------------------------------------------------
+
+Iteration for vertex: A
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: B
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: E
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: W
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: D
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: C
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: F
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: V
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: J
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: K
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: L
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: M
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: R
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: Y
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: G
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: H
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: I
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: P
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: O
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: N
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: Z
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: X
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+Iteration for vertex: S
+Checking paths for edges: A->B and B->A
+Checking paths for edges: A->E and E->A
+Checking paths for edges: A->W and W->A
+Checking paths for edges: B->D and D->B
+Checking paths for edges: B->W and W->B
+Checking paths for edges: B->C and C->B
+Checking paths for edges: B->F and F->B
+Checking paths for edges: C->F and F->C
+Checking paths for edges: C->V and V->C
+Checking paths for edges: D->E and E->D
+Checking paths for edges: D->J and J->D
+Checking paths for edges: E->K and K->E
+Checking paths for edges: F->L and L->F
+Checking paths for edges: F->M and M->F
+Checking paths for edges: F->R and R->F
+Checking paths for edges: F->Y and Y->F
+Checking paths for edges: G->K and K->G
+Checking paths for edges: G->J and J->G
+Checking paths for edges: G->H and H->G
+Checking paths for edges: H->I and I->H
+Checking paths for edges: H->P and P->H
+Checking paths for edges: I->K and K->I
+Checking paths for edges: J->O and O->J
+Checking paths for edges: J->L and L->J
+Checking paths for edges: L->N and N->L
+Checking paths for edges: N->O and O->N
+Checking paths for edges: O->P and P->O
+Checking paths for edges: M->N and N->M
+Checking paths for edges: M->Z and Z->M
+Checking paths for edges: M->X and X->M
+Checking paths for edges: Z->N and N->Z
+Checking paths for edges: X->Z and Z->X
+Checking paths for edges: Y->X and X->Y
+Checking paths for edges: R->S and S->R
+Checking paths for edges: S->V and V->S
+
+Predecessors:
+┌─────────┬────────┐
+│ (index) │ Values │
+├─────────┼────────┤
+│    A    │  'B'   │
+│    B    │  'F'   │
+│    E    │  'A'   │
+│    W    │  'A'   │
+│    D    │  'B'   │
+│    C    │  'B'   │
+│    F    │  null  │
+│    V    │  'S'   │
+│    J    │  'L'   │
+│    K    │  'E'   │
+│    L    │  'F'   │
+│    M    │  'F'   │
+│    R    │  'F'   │
+│    Y    │  'F'   │
+│    G    │  'J'   │
+│    H    │  'P'   │
+│    I    │  'H'   │
+│    P    │  'O'   │
+│    O    │  'N'   │
+│    N    │  'L'   │
+│    Z    │  'X'   │
+│    X    │  'Y'   │
+│    S    │  'R'   │
+└─────────┴────────┘
+
+Optimal values:
+┌─────────┬────────┐
+│ (index) │ Values │
+├─────────┼────────┤
+│    A    │   5    │
+│    B    │   3    │
+│    E    │   7    │
+│    W    │   6    │
+│    D    │   8    │
+│    C    │   5    │
+│    F    │   0    │
+│    V    │   9    │
+│    J    │   4    │
+│    K    │   10   │
+│    L    │   2    │
+│    M    │   7    │
+│    R    │   3    │
+│    Y    │   1    │
+│    G    │   9    │
+│    H    │   9    │
+│    I    │   13   │
+│    P    │   8    │
+│    O    │   7    │
+│    N    │   6    │
+│    Z    │   8    │
+│    X    │   6    │
+│    S    │   7    │
+└─────────┴────────┘
+
+--------------------------------------------------
+
+Paths:
+┌─────────┬─────┬─────┬─────┬─────┬─────┬─────┐
+│ (index) │  0  │  1  │  2  │  3  │  4  │  5  │
+├─────────┼─────┼─────┼─────┼─────┼─────┼─────┤
+│    A    │ 'B' │ 'F' │     │     │     │     │
+│    B    │ 'F' │     │     │     │     │     │
+│    E    │ 'A' │ 'B' │ 'F' │     │     │     │
+│    W    │ 'A' │ 'B' │ 'F' │     │     │     │
+│    D    │ 'B' │ 'F' │     │     │     │     │
+│    C    │ 'B' │ 'F' │     │     │     │     │
+│    F    │ 'F' │     │     │     │     │     │
+│    V    │ 'S' │ 'R' │ 'F' │     │     │     │
+│    J    │ 'L' │ 'F' │     │     │     │     │
+│    K    │ 'E' │ 'A' │ 'B' │ 'F' │     │     │
+│    L    │ 'F' │     │     │     │     │     │
+│    M    │ 'F' │     │     │     │     │     │
+│    R    │ 'F' │     │     │     │     │     │
+│    Y    │ 'F' │     │     │     │     │     │
+│    G    │ 'J' │ 'L' │ 'F' │     │     │     │
+│    H    │ 'P' │ 'O' │ 'N' │ 'L' │ 'F' │     │
+│    I    │ 'H' │ 'P' │ 'O' │ 'N' │ 'L' │ 'F' │
+│    P    │ 'O' │ 'N' │ 'L' │ 'F' │     │     │
+│    O    │ 'N' │ 'L' │ 'F' │     │     │     │
+│    N    │ 'L' │ 'F' │     │     │     │     │
+│    Z    │ 'X' │ 'Y' │ 'F' │     │     │     │
+│    X    │ 'Y' │ 'F' │     │     │     │     │
+│    S    │ 'R' │ 'F' │     │     │     │     │
+└─────────┴─────┴─────┴─────┴─────┴─────┴─────┘
